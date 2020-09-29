@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartGenerator-Chart.js", "ChartGeneratorChartJs\ChartGenerator-Chart.js.csproj", "{8095E28B-DD4F-4463-AD61-303BE07983EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartGenerator-Chart.js-Standard", "ChartGeneratorChartJs-Standard\ChartGenerator-Chart.js-Standard.csproj", "{6F8B7517-6F02-4CF7-9B10-4DCCA17AC063}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8095E28B-DD4F-4463-AD61-303BE07983EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8095E28B-DD4F-4463-AD61-303BE07983EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8095E28B-DD4F-4463-AD61-303BE07983EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8095E28B-DD4F-4463-AD61-303BE07983EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F8B7517-6F02-4CF7-9B10-4DCCA17AC063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8B7517-6F02-4CF7-9B10-4DCCA17AC063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8B7517-6F02-4CF7-9B10-4DCCA17AC063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8B7517-6F02-4CF7-9B10-4DCCA17AC063}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DA31D096-32D4-4942-890B-2978A2D146B8}
+		SolutionGuid = {C780378B-0F17-4B83-8A2B-3C2FFA40E928}
 	EndGlobalSection
 EndGlobal
