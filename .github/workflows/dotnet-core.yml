@@ -23,3 +23,10 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Pack
+      working-directory: ChartGeneratorChartJs-Standard
+      run: dotnet pack --configuration Release
+    - name: Publish
+      working-directory: ChartGeneratorChartJs-Standard
+      run: dotnet nuget push "bin/Release/ChartGenerator-Chart.Js.1.0.0.nupkg" --source "github"
+
