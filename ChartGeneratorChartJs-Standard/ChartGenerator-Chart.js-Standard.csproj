@@ -5,19 +5,14 @@
     <Nullable>Enable</Nullable>
     <AssemblyName>ChartGenerator-Chart.js</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.6</Version>
-    <Description>.net standard library to create beautiful charts with Charts.Js syntax and Puppeteer</Description>
+    <Version>0.0.61</Version>
+    <Description>.net standard library to create beautiful chart images with Charts.Js syntax and Puppeteer</Description>
     <Authors>Ankur Nigam</Authors>
     <Company>FFive.xyz</Company>
+    <PackageProjectUrl>https://github.com/ffive-xyz/ChartGenerator-Chart.Js</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="PuppeteerSharp" Version="2.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="html\index.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 </Project>
