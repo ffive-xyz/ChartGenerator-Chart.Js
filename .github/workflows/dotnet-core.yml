@@ -31,7 +31,9 @@ jobs:
     - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.2
       if: github.ref == 'refs/heads/master'
+      env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
       with:
           PROJECT_FILE_PATH: ChartGeneratorChartJs-Standard/ChartGenerator-Chart.js-Standard.csproj
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
 
