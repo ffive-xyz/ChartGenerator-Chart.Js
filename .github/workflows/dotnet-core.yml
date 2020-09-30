@@ -14,29 +14,26 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: try secret
-      run: echo ${{ secrets.NUGET_API_KEY }}
-
-    # - name: Setup .NET Core
-    #   uses: actions/setup-dotnet@v1
-    #   with:
-    #     dotnet-version: 3.1.301
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
         
-    # - name: Install dependencies
-    #   run: dotnet restore
+    - name: Install dependencies
+      run: dotnet restore
 
-    # - name: Build
-    #   run: dotnet build --configuration Release --no-restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
 
-    # - name: Test
-    #   run: dotnet test --no-restore --verbosity normal
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
 
-    # - name: Publish
-    #   uses: brandedoutcast/publish-nuget@v2.5.2
-    #   if: github.ref == 'refs/heads/master'
-    #   env:
-    #       NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-    #   with:
-    #       PROJECT_FILE_PATH: ChartGeneratorChartJs-Standard/ChartGenerator-Chart.js-Standard.csproj
-    #       NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
+    - name: Publish
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      if: github.ref == 'refs/heads/master'
+      env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+      with:
+          PROJECT_FILE_PATH: ChartGeneratorChartJs-Standard/ChartGenerator-Chart.js-Standard.csproj
+          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
 
