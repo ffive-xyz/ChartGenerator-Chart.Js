@@ -28,9 +28,9 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
 
-    - name: Publish FluentEmail.Core
+    - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.2
-      if: github.ref == 'master'
+      if: github.ref == 'refs/heads/master'
       with:
           PROJECT_FILE_PATH: ChartGeneratorChartJs-Standard/ChartGenerator-Chart.js-Standard.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
