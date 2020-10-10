@@ -69,6 +69,7 @@ namespace ChartGeneratorChartJs
             var html = indexHtml.Insert(indexHtml.IndexOf("</body>"), createScript(chartConfig));
             await page.SetContentAsync(html);
             var bytes = await page.ScreenshotDataAsync();
+            await page.CloseAsync();
             return bytes;
         }
 
