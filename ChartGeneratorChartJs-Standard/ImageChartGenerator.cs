@@ -47,11 +47,20 @@ namespace ChartGeneratorChartJs
 
         #endregion Public Constructors
 
+        #region Private Destructors
+
+        ~ImageChartGenerator()
+        {
+            Dispose();
+        }
+
+        #endregion Private Destructors
+
         #region Public Methods
 
-        public void Dispose()
+        public async void Dispose()
         {
-            browser.Dispose();
+            await browser.CloseAsync();
         }
 
         public async Task<byte[]> GenerateChartAsync(ChartConfig chartConfig)
