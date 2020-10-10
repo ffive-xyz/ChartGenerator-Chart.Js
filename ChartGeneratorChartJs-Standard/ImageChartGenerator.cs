@@ -8,8 +8,14 @@ namespace ChartGeneratorChartJs
 {
     public class ImageChartGenerator : IDisposable
     {
+        #region Private Fields
+
         private readonly Browser browser;
         private readonly string indexHtml;
+
+        #endregion Private Fields
+
+        #region Public Constructors
 
         public ImageChartGenerator(bool headless = true)
         {
@@ -27,10 +33,21 @@ namespace ChartGeneratorChartJs
                         </html>";
 
             new BrowserFetcher().DownloadAsync(BrowserFetcher.DefaultRevision).Wait();
-            var browserTask = Puppeteer.LaunchAsync(new LaunchOptions { Headless = headless });
+            var browserTask = Puppeteer.LaunchAsync(new LaunchOptions
+            {
+                Headless = headless,
+                Args = new[]
+                {
+                    "--no-sandbox"
+                }
+            });
             browserTask.Wait();
             browser = browserTask.Result;
         }
+
+        #endregion Public Constructors
+
+        #region Public Methods
 
         public void Dispose()
         {
@@ -46,10 +63,16 @@ namespace ChartGeneratorChartJs
             return bytes;
         }
 
+        #endregion Public Methods
+
+        #region Private Methods
+
         private string createScript(ChartConfig chartConfig)
         {
             var script = @"<script>new Chart(ctx," + chartConfig.CreateScript() + ")</script>";
             return script;
         }
+
+        #endregion Private Methods
     }
 }
