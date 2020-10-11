@@ -12,6 +12,7 @@
             public double Bottom { get; set; }
 
             public PaddingOptions(int value) => Left = Right = Top = Bottom = value;
+            public PaddingOptions(){}
         }
     }
 }

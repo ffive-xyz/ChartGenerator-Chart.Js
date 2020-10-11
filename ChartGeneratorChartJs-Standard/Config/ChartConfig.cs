@@ -10,12 +10,12 @@ namespace ChartGeneratorChartJs.Config
     {
         public enum ChartTypes
         {
-            Line, Bar, HorizontalBar, Radar, Doughnut, PolarArea, Bubble, Pie, Scatter
+            line, bar, horizontalBar, radar, doughnut, polarArea, bubble, pie, scatter
         }
 
         public enum PointStyles
         {
-            Circle, Cross, CrossRot, Dash, Line, Rect, RectRounded, RectRot, Star, Triangle
+            circle, cross, crossRot, dash, line, rect, rectRounded, rectRot, star, triangle
         }
 
         public enum PositionTypes
@@ -25,19 +25,20 @@ namespace ChartGeneratorChartJs.Config
 
         public enum AlignTypes
         {
-            Start, Center, End
+            start, center, end
         }
 
         public enum ScaleTypes
         {
-            Category, Linear, Logarithmic, Time, RadialLinear
+            category, linear, logarithmic, time, radialLinear
         }
 
         public enum TimeUnits
         {
-            Millisecond, Second, Minute, Hour, Day, Week, Month, Quarter, Year
+            millisecond, second, minute, hour, day, week, month, quarter, year
         }
 
+        [JsonConverter(typeof(StringEnumConverter))]
         public ChartTypes Type { get; set; } = ChartTypes.Line;
 
         public ChartOptions Options { get; set; } = new ChartOptions();
