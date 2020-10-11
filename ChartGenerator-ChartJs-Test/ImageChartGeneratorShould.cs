@@ -9,13 +9,15 @@ namespace ChartGenerator_ChartJs_Test
 {
     public class ImageChartGeneratorShould
     {
+        #region Public Methods
+
         [Fact]
         public async Task CreateBarImageAsync()
         {
             using var sut = new ImageChartGenerator(true);
             var config = new ChartConfig
             {
-                Type = ChartConfig.ChartTypes.Bar,
+                Type = ChartConfig.ChartTypes.bar,
                 Options = new ChartOptions
                 {
                     Title = new ChartTitleOptions
@@ -87,13 +89,14 @@ namespace ChartGenerator_ChartJs_Test
 
             Assert.True(true);
         }
+
         [Fact]
         public async Task CreateStackedBarImageAsync()
         {
             using var sut = new ImageChartGenerator(true);
             var config = new ChartConfig
             {
-                Type = ChartConfig.ChartTypes.Bar,
+                Type = ChartConfig.ChartTypes.bar,
                 Options = new ChartOptions
                 {
                     Title = new ChartTitleOptions
@@ -173,7 +176,7 @@ namespace ChartGenerator_ChartJs_Test
             using var sut = new ImageChartGenerator(true);
             var config = new ChartConfig
             {
-                Type = ChartConfig.ChartTypes.Line,
+                Type = ChartConfig.ChartTypes.line,
                 Options = new ChartOptions
                 {
                     Title = new ChartTitleOptions
@@ -232,7 +235,7 @@ namespace ChartGenerator_ChartJs_Test
             using var sut = new ImageChartGenerator(true);
             var config = new ChartConfig
             {
-                Type = ChartConfig.ChartTypes.Doughnut,
+                Type = ChartConfig.ChartTypes.doughnut,
                 Options = new ChartOptions
                 {
                     Title = new ChartTitleOptions
@@ -311,7 +314,7 @@ namespace ChartGenerator_ChartJs_Test
             using var sut = new ImageChartGenerator(true);
             var config = new ChartConfig
             {
-                Type = ChartConfig.ChartTypes.Pie,
+                Type = ChartConfig.ChartTypes.pie,
                 Options = new ChartOptions
                 {
                     Title = new ChartTitleOptions
@@ -383,5 +386,7 @@ namespace ChartGenerator_ChartJs_Test
 
             Assert.True(true);
         }
+
+        #endregion Public Methods
     }
 }

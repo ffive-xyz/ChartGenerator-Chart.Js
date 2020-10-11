@@ -8,6 +8,8 @@ namespace ChartGeneratorChartJs.Config
     // https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/chart.js/index.d.ts
     public class ChartConfig
     {
+        #region Public Enums
+
         public enum ChartTypes
         {
             line, bar, horizontalBar, radar, doughnut, polarArea, bubble, pie, scatter
@@ -38,12 +40,20 @@ namespace ChartGeneratorChartJs.Config
             millisecond, second, minute, hour, day, week, month, quarter, year
         }
 
+        #endregion Public Enums
+
+        #region Public Properties
+
         [JsonConverter(typeof(StringEnumConverter))]
-        public ChartTypes Type { get; set; } = ChartTypes.Line;
+        public ChartTypes Type { get; set; } = ChartTypes.line;
 
         public ChartOptions Options { get; set; } = new ChartOptions();
 
         public ChartData Data { get; set; } = new ChartData();
+
+        #endregion Public Properties
+
+        #region Internal Methods
 
         internal string CreateScript()
         {
@@ -53,5 +63,7 @@ namespace ChartGeneratorChartJs.Config
                 Converters = new List<JsonConverter> { new StringEnumConverter(true) }
             });
         }
+
+        #endregion Internal Methods
     }
 }
