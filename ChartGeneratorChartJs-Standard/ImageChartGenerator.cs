@@ -21,10 +21,8 @@ namespace ChartGeneratorChartJs
         {
             indexHtml = @"<html>
                             <body>
-                            <script src='https://polyfill.io/v3/polyfill.min.js'></script>
-                            <script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script>
-                            <script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js'></script>
-                            <script src='https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0'></script>
+                            <script src='https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
+                            <script src='https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js'></script>
                             <canvas id='myChart'></canvas>
                             <script>
                                 var ctx = document.getElementById('myChart').getContext('2d');

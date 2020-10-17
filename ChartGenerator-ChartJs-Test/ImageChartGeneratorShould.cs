@@ -25,7 +25,36 @@ namespace ChartGenerator_ChartJs_Test
                         Display = true,
                         Text = "This is cool"
                     },
-                    AspectRatio = 1.4
+                    AspectRatio = 1.4,
+                    Scales = new ChartScaleOptions
+                    {
+                        YAxes = new ChartScaleOptions.IAxisProperty[]
+                        {
+                            new ChartScaleOptions.FontProperty
+                            {
+                                Ticks = new ChartScaleOptions.FontProperty.TicksProperty
+                                {
+                                    FontSize = 20
+                                }
+                            }
+                        }
+                    },
+                    Legend = new LegendOptions
+                    {
+                        Labels = new LegendOptions.LegendLabelConfiguration
+                        {
+                            FontSize = 20
+                        }
+                    },
+                    Plugins = new Plugins
+                    {
+                        Labels = new PluginLabels
+                        {
+                            FontSize = 20,
+                            Render = PluginLabels.RenderEnum.value,
+                            FontColor = "#000"
+                        }
+                    }
                 },
                 Data = new ChartData
                 {
@@ -243,7 +272,15 @@ namespace ChartGenerator_ChartJs_Test
                         Display = true,
                         Text = "This is cool"
                     },
-                    AspectRatio = 1.4
+                    AspectRatio = 1.4,
+                    Plugins = new Plugins
+                    {
+                        Labels = new PluginLabels
+                        {
+                            FontSize = 23,
+                            FontColor = "#000"
+                        }
+                    }
                 },
                 Data = new ChartData
                 {

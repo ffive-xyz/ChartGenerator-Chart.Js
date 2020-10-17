@@ -1,10 +1,10 @@
 ﻿namespace ChartGeneratorChartJs.Config
 {
-    public class AnimationOptions
+    public class Plugins
     {
         #region Public Properties
 
-        public double Duration { get; } = 0;
+        public PluginLabels? Labels { get; set; }
 
         #endregion Public Properties
     }

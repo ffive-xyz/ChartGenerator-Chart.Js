@@ -2,6 +2,8 @@
 {
     public class ChartOptions
     {
+        #region Public Properties
+
         public bool Responsive { get; set; } = true;
         public double ResponsiveAnimationDuration { get; set; } = 0;
         public double AspectRatio { get; set; } = 2;
@@ -11,5 +13,9 @@
         public LayoutOptions Layout { get; set; } = new LayoutOptions();
         public LegendOptions Legend { get; set; } = new LegendOptions();
         public ChartScaleOptions? Scales { get; set; }
+
+        public Plugins Plugins { get; set; }
+
+        #endregion Public Properties
     }
 }

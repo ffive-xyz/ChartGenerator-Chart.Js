@@ -59,7 +59,7 @@ namespace ChartGeneratorChartJs.Config
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented, new JsonSerializerSettings
             {
-                ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                ContractResolver = new KababCasePropertyNamesContractResolver(),
                 Converters = new List<JsonConverter> { new StringEnumConverter(true) }
             });
         }
