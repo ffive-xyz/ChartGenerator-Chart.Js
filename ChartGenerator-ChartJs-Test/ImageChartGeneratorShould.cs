@@ -63,7 +63,7 @@ namespace ChartGenerator_ChartJs_Test
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of voters",
+                            Label="# of voters".Split(' '),
                             Data = new double[] { 12, 19, 3, 5, 2, 3 },
                             BackgroundColor = new string[]
                             {
@@ -87,7 +87,7 @@ namespace ChartGenerator_ChartJs_Test
                         },
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of testers",
+                            Label="# of testers".Split(' '),
                             Data = new double[] { 102, 109, 30, 50, 20, 30 },
                             BackgroundColor = new string[]
                             {
@@ -143,7 +143,7 @@ namespace ChartGenerator_ChartJs_Test
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of voters",
+                            Label="# of voters".Split(' '),
                             Data = new double[] { 12, 19, 3, 5, 2, 3 },
                             BackgroundColor = new string[]
                             {
@@ -167,7 +167,7 @@ namespace ChartGenerator_ChartJs_Test
                         },
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of testers",
+                            Label="# of testers".Split(' '),
                             Data = new double[] { 102, 109, 30, 50, 20, 30 },
                             BackgroundColor = new string[]
                             {
@@ -222,7 +222,7 @@ namespace ChartGenerator_ChartJs_Test
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of voters",
+                            Label="# of voters".Split(' '),
                             Data = new double[] { 12, 19, 3, 5, 2, 3 },
                             BackgroundColor = new string[]
                             {
@@ -236,7 +236,7 @@ namespace ChartGenerator_ChartJs_Test
                         },
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of testers",
+                            Label="# of testers".Split(' '),
                             Data = new double[] { 102, 109, 30, 50, 20, 30 },
                             BackgroundColor = new string[]
                             {
@@ -289,7 +289,7 @@ namespace ChartGenerator_ChartJs_Test
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of voters",
+                            Label="# of voters".Split(' '),
                             Data = new double[] { 12, 19, 3, 5, 2, 3 },
                             BackgroundColor = new string[]
                             {
@@ -313,7 +313,7 @@ namespace ChartGenerator_ChartJs_Test
                         },
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of testers",
+                            Label="# of testers".Split(' '),
                             Data = new double[] { 102, 109, 30, 50, 20, 30 },
                             BackgroundColor = new string[]
                             {
@@ -368,7 +368,7 @@ namespace ChartGenerator_ChartJs_Test
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of voters",
+                            Label="# of voters".Split(' '),
                             Data = new double[] { 12, 19, 3, 5, 2, 3 },
                             BackgroundColor = new string[]
                             {
@@ -392,7 +392,7 @@ namespace ChartGenerator_ChartJs_Test
                         },
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
                         {
-                            Label="# of testers",
+                            Label="# of testers".Split(' '),
                             Data = new double[] { 102, 109, 30, 50, 20, 30 },
                             BackgroundColor = new string[]
                             {
