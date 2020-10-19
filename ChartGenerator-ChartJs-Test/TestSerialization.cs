@@ -62,7 +62,7 @@ namespace ChartGenerator_ChartJs_Test
                     {
                         new DatasetOptions
                         {
-                            Label="asdkjh",
+                            Label="asdkjh".Split(' '),
                             Data = new double[] { 10,20,30,40},
                             BackgroundColor = BackgroundColorSet1,
                             BorderColor = BorderColorSet1,
