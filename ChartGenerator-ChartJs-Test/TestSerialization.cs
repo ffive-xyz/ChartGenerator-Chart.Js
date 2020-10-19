@@ -69,7 +69,7 @@ namespace ChartGenerator_ChartJs_Test
                             BorderWidth = 1
                         }
                     },
-                    Labels = new[] { "asjkd" }
+                    Labels = new[,] { { "asjkd" } }
                 }
             };
             check(config);

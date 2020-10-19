@@ -15,6 +15,7 @@ namespace ChartGenerator_ChartJs_Test
         public async Task CreateBarImageAsync()
         {
             using var sut = new ImageChartGenerator(true);
+
             var config = new ChartConfig
             {
                 Type = ChartConfig.ChartTypes.bar,
@@ -58,7 +59,8 @@ namespace ChartGenerator_ChartJs_Test
                 },
                 Data = new ChartData
                 {
-                    Labels = new string[] { "Red", "Blue", "Yellow", "Green", "Purple", "Orange" },
+                    Labels = new string[,] { { "Red" }, { "Blue" }, { "Yellow" }, { "Green" }, { "Purple" }, { "Orange" }
+                },
                     Datasets = new ChartGeneratorChartJs.Config.Dataset.DatasetOptions[]
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
@@ -112,7 +114,6 @@ namespace ChartGenerator_ChartJs_Test
                     }
                 }
             };
-
             var x = await sut.GenerateChartAsync(config);
             File.WriteAllBytes("generatedBar.jpg", x);
 
@@ -138,7 +139,7 @@ namespace ChartGenerator_ChartJs_Test
                 },
                 Data = new ChartData
                 {
-                    Labels = new string[] { "Red", "Blue", "Yellow", "Green", "Purple", "Orange" },
+                    Labels = new string[,] { { "Red" }, { "Blue" }, { "Yellow" }, { "Green" }, { "Purple" }, { "Orange" }, },
                     Datasets = new ChartGeneratorChartJs.Config.Dataset.DatasetOptions[]
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
@@ -217,7 +218,7 @@ namespace ChartGenerator_ChartJs_Test
                 },
                 Data = new ChartData
                 {
-                    Labels = new string[] { "Red", "Blue", "Yellow", "Green", "Purple", "Orange" },
+                    Labels = new string[,] { { "Red" }, { "Blue" }, { "Yellow" }, { "Green" }, { "Purple" }, { "Orange" }, },
                     Datasets = new ChartGeneratorChartJs.Config.Dataset.DatasetOptions[]
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
@@ -284,7 +285,7 @@ namespace ChartGenerator_ChartJs_Test
                 },
                 Data = new ChartData
                 {
-                    Labels = new string[] { "Red", "Blue", "Yellow", "Green", "Purple", "Orange" },
+                    Labels = new string[,] { { "Red" }, { "Blue" }, { "Yellow" }, { "Green" }, { "Purple" }, { "Orange" }, },
                     Datasets = new ChartGeneratorChartJs.Config.Dataset.DatasetOptions[]
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
@@ -363,7 +364,7 @@ namespace ChartGenerator_ChartJs_Test
                 },
                 Data = new ChartData
                 {
-                    Labels = new string[] { "Red", "Blue", "Yellow", "Green", "Purple", "Orange" },
+                    Labels = new string[,] { { "Red" }, { "Blue" }, { "Yellow" }, { "Green" }, { "Purple" }, { "Orange" }, },
                     Datasets = new ChartGeneratorChartJs.Config.Dataset.DatasetOptions[]
                     {
                         new ChartGeneratorChartJs.Config.Dataset.DatasetOptions
