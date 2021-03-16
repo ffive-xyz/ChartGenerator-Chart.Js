@@ -5,7 +5,7 @@
     <Nullable>Enable</Nullable>
     <AssemblyName>ChartGenerator-Chart.js</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.70</Version>
+    <Version>0.0.71</Version>
     <Description>.net standard library to create beautiful chart images with Charts.Js syntax and Puppeteer</Description>
     <Authors>Ankur Nigam</Authors>
     <Company>FFive.xyz</Company>
