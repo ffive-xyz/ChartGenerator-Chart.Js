@@ -214,7 +214,21 @@ namespace ChartGenerator_ChartJs_Test
                         Display = true,
                         Text = "This is cool"
                     },
-                    AspectRatio = 1.4
+                    AspectRatio = 1.4,
+                    Scales = new ChartScaleOptions
+                    {
+                        YAxes = new ChartScaleOptions.IAxisProperty[]
+                        {
+                            new ChartScaleOptions.FontProperty
+                            {
+                                Ticks = new ChartScaleOptions.FontProperty.TicksProperty
+                                {
+                                    StepSize = 5,
+                                    FontSize = 20
+                                }
+                            }
+                        }
+                    },
                 },
                 Data = new ChartData
                 {

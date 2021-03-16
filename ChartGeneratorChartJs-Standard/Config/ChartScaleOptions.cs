@@ -45,6 +45,9 @@ namespace ChartGeneratorChartJs.Config
                 #region Public Properties
 
                 public double FontSize { get; set; }
+                public double StepSize { get; set; }
+                public double SuggestedMax { get;set;}
+                public double SuggestedMin { get; set; }
 
                 #endregion Public Properties
             }
